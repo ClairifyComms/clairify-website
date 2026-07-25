@@ -644,6 +644,66 @@
     margin-top: 24px;
   }
 
+  /* ---------- CLIENTS PAGE ---------- */
+  .clients-intro {
+    padding: 100px 64px 40px;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .clients-intro .label {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--prussian-60);
+    font-weight: 500;
+    margin-bottom: 22px;
+  }
+  .clients-intro h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--prussian);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .sector-grid {
+    padding: 40px 64px 140px;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sector-block {
+    background: var(--paper);
+    border-top: 3px solid var(--prussian);
+    border-right: 1px solid var(--prussian-20);
+    border-bottom: 1px solid var(--prussian-20);
+    padding: 32px 28px;
+  }
+  .sector-block h3 {
+    font-size: 16px;
+    color: var(--prussian);
+    font-weight: 600;
+    margin: 0 0 20px;
+  }
+  .sector-block .wordmarks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+  .sector-block .wordmark-chip {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--prussian-80);
+    letter-spacing: 0.01em;
+  }
+  @media (max-width: 1000px) and (min-width: 761px) {
+    .sector-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 760px) {
+    .sector-grid { grid-template-columns: 1fr; }
+  }
+
   @media (max-width: 760px) {
     .pillars, .bring-grid, .tile-grid { grid-template-columns: 1fr; }
     .photo-intro { grid-template-columns: 1fr; }
