@@ -69,7 +69,27 @@
     overflow: hidden;
     border-bottom: 1px solid var(--prussian-20);
   }
-  .hero-inner { max-width: 760px; position: relative; z-index: 2; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 60px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .hero-inner { max-width: 640px; position: relative; z-index: 2; }
+  .hero-mark {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-mark img {
+    width: 100%;
+    max-width: 300px;
+  }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-mark { display: none; }
+  }
   .eyebrow {
     font-size: 13px;
     letter-spacing: 0.18em;
@@ -175,7 +195,8 @@
   .pillars {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 72px 0 0;
+    margin: 72px auto 0;
+    max-width: 1240px;
   }
   .pillar {
     padding: 64px 56px;
