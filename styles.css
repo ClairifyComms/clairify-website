@@ -64,7 +64,7 @@
   .hero {
     background: var(--paper);
     color: var(--ink);
-    padding: 100px 64px 100px;
+    padding: 56px 64px 100px;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid var(--prussian-20);
