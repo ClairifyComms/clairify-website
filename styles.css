@@ -79,7 +79,7 @@
   .hero {
     background: var(--paper);
     color: var(--ink);
-    padding: 32px 64px 100px;
+    padding: 32px 64px 64px;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid var(--prussian-20);
@@ -110,9 +110,9 @@
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--prussian-60);
-    margin-bottom: 36px;
+    margin-bottom: 24px;
     font-weight: 500;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-bottom: 1px solid var(--prussian-20);
     display: inline-block;
   }
@@ -121,35 +121,38 @@
     font-weight: 600;
     line-height: 1.16;
     letter-spacing: -0.01em;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     color: var(--prussian);
   }
   .hero p.sub {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.55;
     color: #4a4a4a;
     max-width: 540px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
-  .hero p.sub:last-of-type { margin-bottom: 32px; }
+  .hero p.sub:last-of-type { margin-bottom: 0; }
+  .manifesto {
+    max-width: 540px;
+    margin: 22px 0 26px;
+    padding-left: 16px;
+    border-left: 2px solid var(--prussian-20);
+  }
   .hero p.power-line {
-    font-size: 26px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 1.35;
     color: var(--prussian);
-    max-width: 540px;
-    margin: 28px 0 32px;
+    margin-bottom: 8px;
     letter-spacing: -0.01em;
   }
   .hero p.bridge {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    font-style: italic;
     line-height: 1.5;
-    color: var(--prussian);
-    max-width: 540px;
-    margin-bottom: 32px;
+    color: var(--prussian-80);
+    margin-bottom: 0;
   }
   .cta-row { display: flex; gap: 20px; flex-wrap: wrap; }
   .btn {
