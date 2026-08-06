@@ -84,26 +84,11 @@
     overflow: hidden;
     border-bottom: 1px solid var(--prussian-20);
   }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    align-items: center;
-    gap: 60px;
-    max-width: 1240px;
+  .hero-content {
+    max-width: 900px;
     margin: 0 auto;
-  }
-  .hero-inner { max-width: 640px; position: relative; z-index: 2; }
-  .hero-mark {
-    display: flex;
-    justify-content: center;
-  }
-  .hero-mark img {
-    width: 100%;
-    max-width: 300px;
-  }
-  @media (max-width: 900px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    .hero-mark { display: none; }
+    position: relative;
+    z-index: 2;
   }
   .eyebrow {
     font-size: 13px;
@@ -129,15 +114,28 @@
     font-weight: 400;
     line-height: 1.55;
     color: #4a4a4a;
-    max-width: 540px;
-    margin-bottom: 14px;
+    max-width: 720px;
+    margin-bottom: 24px;
   }
-  .hero p.sub:last-of-type { margin-bottom: 0; }
+  .manifesto-row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
   .manifesto {
-    max-width: 540px;
-    margin: 22px 0 26px;
+    flex: 1;
     padding-left: 16px;
     border-left: 2px solid var(--prussian-20);
+  }
+  .hero-mark-inline {
+    width: 110px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  @media (max-width: 700px) {
+    .manifesto-row { flex-wrap: wrap; }
+    .hero-mark-inline { width: 70px; }
   }
   .hero p.power-line {
     font-size: 21px;
