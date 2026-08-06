@@ -117,25 +117,11 @@
     max-width: 720px;
     margin-bottom: 24px;
   }
-  .manifesto-row {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    margin-bottom: 32px;
-  }
   .manifesto {
-    flex: 1;
+    max-width: 720px;
     padding-left: 16px;
     border-left: 2px solid var(--prussian-20);
-  }
-  .hero-mark-inline {
-    width: 110px;
-    height: auto;
-    flex-shrink: 0;
-  }
-  @media (max-width: 700px) {
-    .manifesto-row { flex-wrap: wrap; }
-    .hero-mark-inline { width: 70px; }
+    margin-bottom: 32px;
   }
   .hero p.power-line {
     font-size: 21px;
