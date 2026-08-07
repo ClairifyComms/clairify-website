@@ -584,7 +584,7 @@
   .photo-intro {
     display: grid;
     grid-template-columns: 1.5fr .5fr;
-    gap: 48px;
+    gap: 28px;
     align-items: start;
     padding: 88px 64px 56px;
     max-width: 1180px;
@@ -610,6 +610,7 @@
     max-width: 300px;
     height: auto;
     margin-left: auto;
+    margin-top: 44px;
     object-fit: cover;
     background: var(--mist);
     border: 1px solid var(--prussian-20);
